@@ -8,7 +8,7 @@ const SingleProduct = (props) => {
     //const response = await axios.get('http://localhost:4550/iphone/');  
     fetch(`${server}iphone`)
       .then((res) => res.json())
-      .then((data) => {ss
+      .then((data) => {
         const productList = data;
         const singleProduct = productList.filter(
           (x) => x.product_url === id
