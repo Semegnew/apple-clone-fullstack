@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import axios from 'axios';
-//const serverIp = process.env.REACT_APP_IP_ADDRESS;
-//const serverPort = process.env.REACT_APP_SERVER_PORT;
 const server = process.env.REACT_APP_SERVER;
 function Iphone() {
   const [products, setProducts] = useState([]);
     
   useEffect(() => {
-    console.log("https://apple-clone-full-stack.onrender.com/iphone");
+    console.log("iphone");
     fetchData();
   }, []);
 
@@ -26,7 +24,7 @@ function Iphone() {
  const fetchData = async () => {
    try {
     //const response = await axios.get('http://localhost:4550/iphone/');  
-    const response = await axios.get(server);
+     const response = await axios.get(`${server}iphone`);
      const jsonData = response.data;
     setProducts(jsonData);
   } catch (error) {

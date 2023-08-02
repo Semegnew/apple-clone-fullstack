@@ -18,7 +18,7 @@ const Middle = (props) => {
 							{props.description}
 						</div>
 						<div class="price-wrapper">
-							{props.pricedesciption}<sup>1</sup>
+							{props.pricedesciption}
 						</div>
 
 						<div className={props.linkwraper}>

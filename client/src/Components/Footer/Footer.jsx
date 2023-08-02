@@ -1,9 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import flag from '../../Resource/images/icons/16.png'
-import $ from 'jquery';
-
-
-
 import Footerlink from './Footerlink'
 
 

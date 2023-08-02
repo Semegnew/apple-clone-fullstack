@@ -65,12 +65,3 @@ const Youtube = () => {
 }
 
 export default Youtube;
-
-
-// search?key= &channelId= &part=snippet,id&order=date&maxResults=1
-
-
-
-//chaId =  UCxA7AzkI2Sndf8S1G5rSkwQ
-// Api  =  AIzaSyC30UJw2bjSxOJZKncK26rGTCBzaM6aVFg
-// baseURL = https://www.googleapis.com/youtube/v3/search?key=AIzaSyC30UJw2bjSxOJZKncK26rGTCBzaM6aVFg&channelId=UCxA7AzkI2Sndf8S1G5rSkwQ&part=snippet,id&order=date&maxResults=6

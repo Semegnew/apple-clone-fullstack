@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-// const serverIp = process.env.REACT_APP_IP_ADDRESS;
-// const serverPort = process.env.REACT_APP_SERVER_PORT;
 const server = process.env.REACT_APP_SERVER;
 const SingleProduct = (props) => {
   const [products, setProducts] = useState([]);
    const id = useParams()['pid'];
   useEffect(() => {
-     //const response = await axios.get('http://localhost:4550/iphone/');  
-    fetch(server)
+    //const response = await axios.get('http://localhost:4550/iphone/');  
+    fetch(`${server}iphone`)
       .then((res) => res.json())
-      .then((data) => {
+      .then((data) => {ss
         const productList = data;
         const singleProduct = productList.filter(
           (x) => x.product_url === id

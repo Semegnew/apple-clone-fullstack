@@ -1,6 +1,6 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './Resource/css/styles.css'
-import { Routes,Route,BrowserRouter, Link} from 'react-router-dom';
+import { Routes,Route} from 'react-router-dom';
 //components
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
