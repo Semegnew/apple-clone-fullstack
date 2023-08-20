@@ -1,25 +1,53 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import axios from "axios";
 const server = process.env.REACT_APP_SERVER;
 const SingleProduct = (props) => {
   const [products, setProducts] = useState([]);
-   const id = useParams()['pid'];
+  const id = useParams()['pid'];
+  
+ //  //use json
+
   useEffect(() => {
-    //const response = await axios.get('http://localhost:4550/iphone/');  
-    fetch(`${server}iphone`)
-      .then((res) => res.json())
+    axios.get('/iphones.json')
+      .then((res) => res.data)
       .then((data) => {
-        const productList = data;
-        const singleProduct = productList.filter(
-          (x) => x.product_url === id
-        );
-        setProducts(singleProduct);
-        console.log(products);
+        console.log("Data:", data?.products); // Log the received data
+        if (Array.isArray(data?.products)) {
+          const singleProduct = data.products.filter((x) => x.product_url === id);
+          console.log("Filtered products:", singleProduct); // Log the filtered products
+          setProducts(singleProduct);
+        } else {
+          console.log("Invalid data format");
+        }
       })
       .catch((error) => {
         console.log(error);
       });
   }, [id]);
+
+
+
+  //using express
+
+  // useEffect(() => {
+  //   //const response = await axios.get('http://localhost:4550/iphone/');  
+  //   fetch(`${server}iphone`)
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       const productList = data;
+  //       const singleProduct = productList.filter(
+  //         (x) => x.product_url === id
+  //       );
+  //       setProducts(singleProduct);
+  //       console.log(products);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }, [id]);
+
+
 
   return (
     <div>

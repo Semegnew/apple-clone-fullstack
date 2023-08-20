@@ -11,26 +11,26 @@ function Iphone() {
   }, []);
 
   //using json file
+  const fetchData = async () => {
+    try {
+      const response = await axios.get("/iphones.json");
+      setProducts(response.data.products);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  //using express server
   // const fetchData = async () => {
   //   try {
-  //     const response = await axios.get("/iphones.json");
-  //     setProducts(response.data.products);
+  //     //const response = await axios.get('http://localhost:4550/iphone/');  
+  //     const response = await axios.get(`${server}iphone`);
+  //     const jsonData = response.data;
+  //     setProducts(jsonData);
   //   } catch (error) {
   //     console.error(error);
   //   }
   // };
-
-  //using express server
- const fetchData = async () => {
-   try {
-    //const response = await axios.get('http://localhost:4550/iphone/');  
-     const response = await axios.get(`${server}iphone`);
-     const jsonData = response.data;
-    setProducts(jsonData);
-  } catch (error) {
-    console.error(error);
-  }
-};
  
   let order = 1;
   return (
