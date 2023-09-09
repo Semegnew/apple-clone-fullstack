@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import './mac.css'
 import axios from 'axios';
 const server = process.env.REACT_APP_SERVER;
 function Mac() {
@@ -20,17 +21,6 @@ function Mac() {
     }
   };
 
-  //using express server
-  // const fetchData = async () => {
-  //   try {
-  //     //const response = await axios.get('http://localhost:4550/Mac/');  
-  //     const response = await axios.get(`${server}Mac`);
-  //     const jsonData = response.data;
-  //     setProducts(jsonData);
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // };
  
   let order = 1;
   return (
