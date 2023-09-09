@@ -28,14 +28,20 @@ img {
 }
 .nav-wrapper ul li a {
 	color: #fff;
+	font-weight: bolder; 
+	font-size:medium ;
+}
+.nav-wrapper ul li a :hover{
+color:aqua ;
 }
 .navbar-toggler {
 	color: #fff;
 }
 .nav-item {
 	text-align: left !important;
-	padding: 4px 0;
-	border-bottom: 1px solid #4b4b4b;
+	padding: 17px 0;
+	border-bottom: 1px solid gray;
+	
 }
 
 /* Footer Styling */
@@ -166,6 +172,15 @@ img {
 .description-wraper.white{
 	color: white;
 }
+.description-wraper2.white{
+	color: white;
+	font-size: 20px;
+	font-weight:600 ;
+}
+.description-wraper2{
+	font-size: 20px;
+	font-weight:600 ;
+}
 .links-wrapper {
 	padding: 15px 0;
 }
@@ -178,9 +193,9 @@ img {
 	text-decoration: none;
 	font-size: 21px;
 }
-.links-wrapper ul li a:hover {
-	color: #000;
-}
+/* .links-wrapper ul li a:hover {
+	color: greenyellow;
+} */
 .links-wrapper ul li a:after {
   font-family: "FontAwesome";
   font-weight: 900;
@@ -196,6 +211,12 @@ img {
 .title-wraper.bold {
   font-weight: 600;
   font-size: 32px;
+  line-height: 1.15em;
+  letter-spacing: -0.04em;
+}
+.title-wraper2.bold {
+  font-weight: 600;
+  font-size: 30px;
   line-height: 1.15em;
   letter-spacing: -0.04em;
 }
@@ -252,6 +273,28 @@ img {
 	margin: 0 0 10px 0;
 	background-size: cover;		
 }
+
+.fourth-heghlight-wrapper2 .left-side-wrapper .left-side-container{
+	background-image:  url("https://www.apple.com/v/tv-home/j/images/overview/homepod__eam53jjm772a_large.jpg"); 
+	background-color: #000;
+	background-position: bottom;
+	padding-top: 35px;
+	margin: 0 0 10px 0;
+	/* background-size: auto; */
+	background-size:20cqmax ;		
+}
+/* .card_b{
+	background-color:#d2d2d7 ;
+} */
+.fourth-heghlight-wrapper3 .left-side-wrapper .left-side-container{
+	background-image:  url("https://www.apple.com/v/tv-home/j/images/overview/apple_tv_4k__b30wcqp0pdle_medium.jpg"); 
+	background-color: white;
+	background-position: bottom;
+	padding-top: 30px;
+	
+	margin: 0 0 10px 0;
+	background-size:25cqmax ;		
+}
 .fourth-heghlight-wrapper .right-side-wrapper .right-side-container{
 	background-image:  url("../images/home/apple-blue-logo.jpg"); 
 	background-color: #165ca9;
@@ -260,6 +303,24 @@ img {
 	margin: 0 0 10px 0;
 	background-size: auto;	
 }
+
+.fourth-heghlight-wrapper2 .right-side-wrapper .right-side-container{
+	background-image:  url("https://www.apple.com/v/tv-home/j/images/overview/room_filling_sound__zagu3551kwyi_large.jpg"); 
+	background-color:white;
+	background-position: bottom;
+	padding-top: 50px;
+	margin: 0 0 10px 0;
+	background-size: auto;	
+}
+.fourth-heghlight-wrapper3 .right-side-wrapper .right-side-container{
+	background-image:  url("https://www.apple.com/v/tv-home/j/images/overview/homeapp__cpc1k972xys2_medium.jpg"); 
+	background-color:white;
+	background-position: bottom;
+	padding-top: 50px;
+	margin: 0 0 10px 0;
+	background-size: auto;	
+}
+
 .links-wrapper.white li a {
 	color: #fff;
 }
@@ -277,6 +338,63 @@ img {
 	padding: 65px 20px;
 	color: #fff;
 }
+.third-hightlight-wrapper2 {
+	background-image: url("https://www.apple.com/v/tv-home/j/images/overview/hero__dbphk49ymi2q_large.jpg");
+	height: 580px;
+	background-position: center;
+	background-repeat: no-repeat;
+  background-size:auto ;
+  background-color: #F5F5F7;
+	text-align: center;
+	padding: 65px 20px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.big_color{
+	 background-color: #F5F5F7;
+}
+.bg_black{
+	background-color: #000;
+	border-radius: 25px;
+	
+}
+.bg_white{
+	background-color:#fff;
+	border-radius: 25px;
+}
+.btn_link1{
+	display: flex;
+	justify-content:center ;
+	
+
+}
+.btn_link1 >Button {
+	border-radius: 30%;
+	width: 70px;
+}
+.btn_link1 >li>a{
+	font-size: 20px;
+	text-decoration: none;
+}
+.btn_link1 >li>a :hover{
+	text-decoration:dashed;
+}
+.btn_link1 >li{
+	list-style:none;
+	margin-left: 20px;
+}
+.img_hgt{
+	padding-bottom: 200px;
+	padding-top: 100px;
+}
+.img_hgt2{
+	padding-bottom: 100px;
+	padding-top: 100px;
+}
+.bg_main{
+	background-color: #E8E8E8;
+}
+
 /*Second section*/
 .second-hightlight-wrapper {
 	background-image: url("../images/home/macbookair-new-sm.jpg");
@@ -389,6 +507,10 @@ img {
 	.title-wraper.bold {
 	  font-size: 56px;
 	}
+	.bold_price{
+		font-size:27px ;
+		font-weight: 500;
+	}
 	/* Second section */
 	.second-hightlight-wrapper {
 		min-height: 692px;
@@ -438,6 +560,21 @@ ul li a {
 	list-style: none;
 	display: none;
 }
+.nav-link_active:hover {
+    color: white;
+	font-weight: bold;
+	margin: 8px 0px;
+}
+
+
+ul li a {
+	text-decoration: none;
+}
+
+.bankerlinks ul {
+	list-style: none;
+	display: none;
+}
 
 
 .nav-item > .nav-link{
@@ -449,5 +586,8 @@ ul li a {
 .nav-item > .nav-link:hover{
 	color: #ffffff !important;
 	opacity: 1 !important;
+}
+ .nav-item > .nav-link.active {
+  color: #ff0000 !important; /* Change to your desired active link color */
 }
 
