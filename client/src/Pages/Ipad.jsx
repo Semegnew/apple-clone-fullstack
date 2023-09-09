@@ -7,6 +7,7 @@ const server = process.env.REACT_APP_SERVER;
 
 function IPad() {
   const [products, setProducts] = useState([]);
+  const [order, setOrder] = useState(2);
 
   useEffect(() => {
     console.log("IPad");
@@ -22,14 +23,29 @@ function IPad() {
     }
   };
 
+ 
+
+  const handleOrderChange = (event) => {
+    const selectedOrder = parseInt(event.target.value);
+    setOrder(selectedOrder);
+  };
+
   return (
     <div>
-      <br /><br /><br /><br />
+      <br />
       <section className="internal-page-wrapper top-100">
         <div className="container">
           <div className="row justify-content-center text-center">
             <div className="col-12">
               <div className="title-wraper bold">iPads</div>
+            </div>
+          </div>
+          <div className="row justify-content-center text-center">
+            <div className="col-12">
+              <div className="order-wrapper">
+                <label htmlFor="order-select">Final Cut Pro and Logic Pro for iPad</label>
+                
+              </div>
             </div>
           </div>
           {products && products.map((product) => {
@@ -61,7 +77,6 @@ function IPad() {
                     </ul>
                   </div>
                 </div>
-
                 <div className="col-sm-12 col-md-6">
                   <div className="product-image">
                     <img src={img} alt="" />

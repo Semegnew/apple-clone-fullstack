@@ -20,22 +20,11 @@ function Iphone() {
     }
   };
 
-  //using express server
-  // const fetchData = async () => {
-  //   try {
-  //     //const response = await axios.get('http://localhost:4550/iphone/');  
-  //     const response = await axios.get(`${server}iphone`);
-  //     const jsonData = response.data;
-  //     setProducts(jsonData);
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // };
- 
+  
   let order = 1;
   return (
     <div>
-      <br /><br /><br /><br />
+      <br />
       <section className="internal-page-wrapper top-100">
         <div className="container">
           <div className="row justify-content-center text-center">

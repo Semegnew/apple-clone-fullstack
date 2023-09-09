@@ -7,7 +7,7 @@
   margin: 0 auto;
 }
 
-.title-wraper {
+.title-wrapper {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 30px;
@@ -62,7 +62,5 @@
 
 .product-image img {
   max-width: 100%;
-height: auto;
+  height: auto;
 }
-
-/* Add any additional styles or modifications as needed */
