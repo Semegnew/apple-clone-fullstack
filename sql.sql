@@ -1,4 +1,7 @@
-USE sql7636451;
+//OpenAi@2023
+//huludeig
+//User “huludeig_huludeig” was added to the database “huludeig_apple”.
+USE huludeig_apple;
 DROP TABLE products;
 DROP TABLE productdescription;
 DROP TABLE productprice;
@@ -36,3 +39,15 @@ INSERT INTO `productdescription` (`product_id`, `product_brief_description`, `pr
 INSERT INTO `productprice` (`product_id`, `starting_price`, `price_range`) VALUES ('1', '$399', 'From $9.54/mo. or $229 with trade-in.*');
 INSERT INTO `productprice` (`product_id`, `starting_price`, `price_range`) VALUES ('2', '$449', 'From $18.70/mo. or $449 with trade-in.*');
 INSERT INTO `productprice` (`product_id`, `starting_price`, `price_range`) VALUES ('3', '$679', 'From $28.29/mo. or $679 with trade-in.*');
+
+
+
+
+
+IP_ADDRESS = '192.168.1.6'
+SERVER_PORT =4550
+MYSQL_PORT =3306
+MYSQL_HOST ='sql7.freemysqlhosting.net'
+MYSQL_USER ='sql7636451'
+MYSQL_PASSWORD='qqfvlY1yw5'
+MYSQL_DATABASE = 'sql7636451'

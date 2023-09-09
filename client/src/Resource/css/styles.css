@@ -439,3 +439,14 @@ ul li a {
 	display: none;
 }
 
+
+.nav-item > .nav-link{
+	font-size: larger !important;
+	font-weight: 600;
+	color: hsl(0, 0%, 100%) !important;
+	opacity: 0.4 !important;
+}
+.nav-item > .nav-link:hover{
+	color: #ffffff !important;
+	opacity: 1 !important;
+}
